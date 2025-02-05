@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <center>
+      <h1>ID CARD</h1>
+      <button onclick="view()">Id Card</button>
+      <button onclick="remove()">close</button>
+    </center>
+
+    <script>
+      function view() {
+        let idcard = document.createElement("div");
+        idcard.id = "idcard";
+
+        let company = document.createElement("h1");
+        company.textContent = "10000 CODERS";
+        company.style.color="red";
+
+        let photo = document.createElement("img");
+        photo.id = "photo";
+        photo.setAttribute("src", "./images/profile1.jpg");
+
+        let name = document.createElement("h1");
+        name.textContent = "Harsha Vardhan Reddy";
+        name.style.fontSize = "15px";
+
+        let work = document.createElement("p");
+        work.textContent = "FullStack Developer";
+
+        idcard.append(company, photo, name, work);
+        document.body.append(idcard);
+      }
+      function remove() {
+        let idcard = document.getElementById("idcard");
+        idcard.remove();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+#idcard {
+    border: 2px solid black;
+    background-color:rgb(217, 214, 211);
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px black;
+}
+#photo {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
